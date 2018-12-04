@@ -1,0 +1,103 @@
+@import "reset";
+@import "var";
+@import "typography";
+
+html, body{
+width: 100%;
+height: 100%;
+overflow-y: scroll; // Allows you to scroll below the viewport; default value is visible
+-webkit-overflow-scrolling: touch; // To smooth any scrolling behavior
+}
+
+html{
+  z-index: 1;
+  background: $brown;
+  color: $brown;
+  background-image: url("../images/background_1000.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  @include tablet{ background-image: url("../images/background_1500.jpg"); }
+  @include desktophd{ background-image: url("../images/background_2000.jpg"); }
+  @include maxwidth{ background-image: url("../images/background_2500.jpg"); }
+}
+
+.wordmark{
+  padding: 2rem;
+  position: fixed;
+  display: block;
+  svg{
+    fill: $cream;
+    height: 4rem;
+    width: auto;
+  }
+  &:hover{
+    svg{ fill: $blue; }
+  }
+}
+
+.tagline{
+  position: fixed;
+  top: 50vh;
+  margin-top: -2em;
+  left: 2rem;
+  @include tablet{
+    top: 2rem;
+    left: 50%;
+    margin-top: 0;
+  }
+  font-family: 'fg-demi-condensed', Arial Narrow, sans-serif;
+  color: $cream;
+  text-transform: uppercase;
+  @include font-size(26);
+}
+
+div.info-panel{
+  font-family: 'cmu', serif;
+  position: relative;
+  top: calc(100% - 4rem);
+  display: block;
+  z-index: 100;
+  background-color: $cream;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 2rem;
+  border-radius: 2rem 2rem 0 0; 
+
+  @include font-size(30);
+  
+  p{
+    padding: 1em 0.5em;
+    width: 100%;
+    @include phablet{
+      width: 66.66%;
+      max-width: 50rem;
+    }
+  }
+
+  .legal{
+    @include font-size(10);
+    position: absolute;
+    bottom: 1rem;
+    span{
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.layer-cake{
+  position: absolute;
+  width: 3/12*100%;
+  bottom: 1rem;
+  right: 1rem;
+  svg{
+    fill: $cream;
+    stroke: $brown;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+    .a:hover{
+      fill: $blue;
+      stroke: $blue;
+    }    
+  }
+}

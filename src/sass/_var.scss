@@ -1,0 +1,55 @@
+// color
+$cream: #fff0d8;
+$brown: #49301f;
+$dark-brown: #210f05;
+$blue: #1717ff;
+
+// Breakpoints
+$mobile    : 400px;
+$phablet   : 550px;
+$tablet    : 750px;
+$desktop   : 1000px;
+$desktophd : 1400px;
+$maxwidth: 1800px;
+
+
+@mixin mobile {
+  @media only screen and (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media only screen and (min-width: #{$phablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktophd {
+  @media only screen and (min-width: #{$desktophd}) {
+    @content;
+  }
+}
+
+@mixin maxwidth {
+  @media only screen and (min-width: #{$maxwidth}) {
+    @content;
+  }
+}
+
+@mixin font-size($size-value: 16) {
+  font-size: $size-value + px;
+  font-size: ($size-value / 10) + rem;
+}
