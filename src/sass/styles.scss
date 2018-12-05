@@ -45,14 +45,17 @@ html{
     left: 50%;
     margin-top: 0;
   }
-  font-family: 'fg-demi-condensed', Arial Narrow, sans-serif;
+  font-family: $title-family;
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.0125em;
   color: $cream;
   text-transform: uppercase;
   @include font-size(26);
 }
 
 div.info-panel{
-  font-family: 'cmu', serif;
+  font-family: $dek-family;
   position: relative;
   top: calc(100% - 4rem);
   display: block;

@@ -12,6 +12,10 @@ $desktop   : 1000px;
 $desktophd : 1400px;
 $maxwidth: 1800px;
 
+// typefaces
+$body-family: 'fg-book', 'Franklin Gothic', 'ITC Franklin Gothic', sans-serif;
+$title-family: 'fg-demi-condensed', franklin-gothic-condensed, sans-serif;
+$dek-family: cmu, serif;
 
 @mixin mobile {
   @media only screen and (min-width: #{$mobile}) {
