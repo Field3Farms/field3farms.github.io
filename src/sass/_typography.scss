@@ -1,25 +1,25 @@
 /**
  * @license
  * MyFonts Webfont Build ID 3685325, 2018-12-09T14:58:24-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: FranklinGothicLTPro-Bk by ITC
  * URL: https://www.myfonts.com/fonts/itc/franklin-gothic/franklin-got/
  * Copyright: Copyright &#x00A9; 2014 Monotype ITC Inc. All rights reserved.
- * 
+ *
  * Webfont: FranklinGothicLTPro-CnDm by ITC
  * URL: https://www.myfonts.com/fonts/itc/franklin-gothic/franklin-got-condensed-demi/
  * Copyright: Copyright &#x00A9; 2016 Monotype ITC Inc. All rights reserved.
- * 
- * 
+ *
+ *
  * License: https://www.myfonts.com/viewlicense?type=web&buildid=3685325
  * Licensed pageviews: 750,000
- * 
+ *
  * © 2018 MyFonts Inc
 */
 
@@ -27,13 +27,13 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/383bcd");
 
-  
+
 @font-face {
   font-family: 'fg-book';
   src: url('../fonts/383BCD_0_0.eot');
   src: url('../fonts/383BCD_0_0.eot?#iefix') format('embedded-opentype'),
-  url('webfonts/383BCD_0_0.woff2') format('woff2'),url('webfonts/383BCD_0_0.woff') format('woff'),
-  url('webfonts/383BCD_0_0.ttf') format('truetype');
+  url('../fonts/383BCD_0_0.woff2') format('woff2'),url('../fonts/383BCD_0_0.woff') format('woff'),
+  url('../fonts/383BCD_0_0.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -50,7 +50,7 @@
 @font-face {
   font-family: 'cmu';
   src: url('../fonts/cmunrm-webfont.woff') format('woff'),
-       url('../fonts/cmunrm-webfont.ttf') format('truetype');  
+       url('../fonts/cmunrm-webfont.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -69,7 +69,7 @@ a{
   color: $brown;
   &:hover{
     color: $blue;
-  }  
+  }
 }
 
 body {
