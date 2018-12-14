@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --sourcemap=none --include-path scss src/sass/styles.scss -o public/css/ && postcss public/css/styles.css --use autoprefixer -d public/css/",
+    "scss": "node-sass --include-path scss src/sass/styles.scss -o public/css/ && postcss public/css/styles.css -d public/css/ --use autoprefixer --no-map",
     "watch": "watch 'npm run scss' src/*"
   },
   "repository": {
